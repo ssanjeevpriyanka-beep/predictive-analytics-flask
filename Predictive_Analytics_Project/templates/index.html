@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Predictive Analytics</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Predictive Analytics</h1>
+
+<p>
+Forecast Future Sales Using Historical Data
+</p>
+
+<form action="/predict" method="POST">
+
+<input
+type="number"
+name="month"
+placeholder="Enter Future Month"
+required>
+
+<button type="submit">
+
+Predict Sales
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
